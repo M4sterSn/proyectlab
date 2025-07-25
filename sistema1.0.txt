@@ -1,9 +1,15 @@
 PASO 1
-Tengo acceso a un sistema de reporte de laboratorio en línea, puedo acceder únicamente al fronted y te puedo pasar el código fuente de cada página que abre, incluyendo el apartado de reporte, plantillas, página principal, etcétera..
+Ayudame a recrear el sistema completo y funcional.
+Tengo únicamente el front-end, elije la mejor tecnología y mas fácil de usar para el back-end. Por ejemplo: PHP, Node.js, Python. Usa mi front-end tal cual, solo haz los ajustes mínimos para cambiar el nombre de la base de datos y el nombre del proyecto, al igual que cambiar el logo del laboratorio.
+2.- La Base de datos se llamará LCS y el Proyecto se llamará LabMind.
+
+3.- Para la base de datos quiero usar el motor MySQL. Necesito que también me diseñes la base de datos con script listo.
+4.- Reutilizar los estilos CSS y scripts JS desde las rutas originales.
+5.- Quiero que el sistema sea idéntico al que menciono.
 
 
 PASO 2
-te comparto el link para inciar sesion, en este caso el link aparece para el nombre del laboratorio en particular "san rafael". https://app24.medicati.com/mdti/lab/sanrafael/auth/login
+Te comparto el link para inciar sesion, en este caso el link aparece para el nombre del laboratorio en particular "san rafael". https://app24.medicati.com/mdti/lab/sanrafael/auth/login
 
 Te comparto todo el contenido de sources de ese link. Te lo detallo a continuación:
 * top, se desglosa en los siguientes apartados: app24.medicati.com, ajax.googleapis.com, fonts.googleapis.com y fonts.gstatic.com. 
@@ -34622,7 +34628,7 @@ https://raw.githubusercontent.com/M4sterSn/img/main/work_sheets-48.png
 https://raw.githubusercontent.com/M4sterSn/img/main/workorder-48.png
 
 
-omiti una parte muy importante del sistem, el reporte de los estudios.
+omiti una parte muy importante del sistema, el reporte de los estudios.
 Una vez que te encuentras en la opción de Ordenes de Laboratorio, eliges que orden quieres comenzar a reportar. Y seleccionas la acción Procesar. Una vez que ingresas a ese apartado te arroja mas datos en sources. En el apartado app24.medicati.com contiene la carpeta mdti/lab y dentro de esta carpeta esta otra carpeta llamada sanrafael/lab/word_order_detail. Dentro de esta ultima carpeta va apareciendo un archivo HTML que cambia conforme eliges la orden a procesar. Te comparto el link de esta orden en especifico:
 https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/92601.html
 
@@ -34657,19 +34663,13 @@ De igual forma te comparto la estructura que yo visualizo en el apartado de sour
 https://raw.githubusercontent.com/M4sterSn/proyectlab/refs/heads/main/estructura del Sources.png
 
 
-Te voy a explicar como se agrega la plantilla de reportes a un concepto.
-
-En el Listado de Conceptos se obervan 3 opciones en el apartado Acción: Editar, Borrar y Detalle. Al ingresar a la opcion detalle te manda a otra pagina la cual te permite registrar la Descripción del Rango Normal, y se debe eligir, sexo, edad, etc.. Al momento en que se guarda la información que se solicita se agrega una opción al Listado de Rangos Normales. En las opciones de acciones aparece la opcion Reportes, es en esta opción justo donde generas la Plantilla del Reporte. Para esta explicación me basare en el Concepto BIOMETRIA HEMATICA COMPLETA SER5801022.
+Te voy a explicar como se agrega la plantilla de reportes a un concepto. En el Listado de Conceptos se obervan 3 opciones en el apartado Acción: Editar, Borrar y Detalle. Al ingresar a la opcion detalle te manda a otra pagina la cual te permite registrar la Descripción del Rango Normal, y se debe eligir, sexo, edad, etc.. Al momento en que se guarda la información que se solicita se agrega una opción al Listado de Rangos Normales. En las opciones de acciones aparece la opcion Reportes, es en esta opción justo donde generas la Plantilla del Reporte. Para esta explicación me basare en el Concepto BIOMETRIA HEMATICA COMPLETA SER5801022.
 
 En el listado de conceptos al presionar la acción Editar me manda a otra pantalla y obtengo el siguiente HTML:
 * https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/35.html
 
-
-
 Al presionar la acción detalle obtengo nuevamente el mismo HTML. Pero al ingresar a la acción Reportes dentro de los detalles del concepto, cambia el Sources. Me cambia a la pantalla de Plantilla del Reporte, del cual obtengo el siguiente HTML:
 * https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/101.html
-
-
 
 Te anexo los archivos nuevos que aparcen aqui y no anexe anteriormente:
 *https://raw.githubusercontent.com/M4sterSn/img/clip.png
@@ -34714,7 +34714,70 @@ Tambien te comparto el QR que se generó y el codigo de barras:
 El QR me manda a este enlace:
 https://app24.medicati.com/mdti/lab/sanrafael/ext_login/patient/58316689/92615923
 
+Para el folio me gustaria que me permitas desde alguna opción o instrucción, poder anexar una leyenda o nota a mi gusto, que me permita elegir el tamaño de letra, incluso si la quiero en negrita o cursiva, esto con la finalidad de que el paciente pueda firmar un pequeño consentimiento informado. Con una sola configuración global es suficiente. También quiero poder modificar la información que se muestra en el folio, es decir, poder cambiar el logo y la información del laboratorio.
+
 Tambien en esta pantalla me muestra los siguientes archivos, supongo que son la generación de etiquetas porque veo el nombre de la impresora:
 *https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/DYMO.Label.Framework.3.0.0.js
 *https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/jquery.dymo.label.js
-En mi caso, recuerda que lo requiero para la otra marca de impresora.
+En mi caso, quiero que las etiquetas se puedan imprimir en la impresora Brother QL-800 en el rollo de 62mm. Quiero que incluya:
+Nombre del laboratorio
+Fecha y hora
+Nombre del paciente
+Edad 
+Estudios
+Tubo a utilizar
+Codigo de barras
+
+Por si se omitió. La cantidad de etiquetas a imprimir se configura en el grupo de etiquetas, el cual tambien se debera de modificar para elegir la cantidad a imprimir por los estudios y color de tubo a utilizar. El color de tubo que quede en texto. Y la impresion de las etiquetas me gustaria que sea como esta predefinida en el sistema. En el cual no me arroja un PDF, si no que directamente la imprime, no se previzualisa, pero si consideras que es una mejora al sistema no tengo problema. Considera el tamaño de la etiqueta para que todo quede perfercamente ordenado y no se vea amontonado y quede profesional
+
+Como dato extra, cambia el logo de medicati por otro que tu eligas para LabMind, también me indicas como cambiar esta imagen en un futuro. La ubicacion del logo de medicaTi es:
+ https://app24.medicati.com/mdti/lab/img/mt_icons/app/logo_mdti.png
+
+2.- También cambias la siguiente imagen:
+https://app24.medicati.com/mdti/lab/img/mt_icons/app/medicati.png
+
+Este ultimo link que te comparto, son letras del logo de medicaTi, quiero cambiarlo por uno propio. También me anexas instrucciones de como cambiarla en un futuro
+
+Conservando la integridad del sistema, quiero que modifiques todo lo que diga medicati por labmind. y todo lo de mdti por mind
+
+También quiero que en el Listado de Ordenes de Trabajo para Laboratorio me permita elegir desde una opcion el status Orden, es decir, que me permita elegir las ordenes que ya estan:
+* Abierto
+* En proceso
+* Completado
+* Entregado
+* Orden Externa
+* Muestra recibida
+* En Ruta
+
+Quiero que los administradores puedan eliminar registros del historial también, es decir, que los administradores tengan control total.
+
+Para los resultados descargables, quiero que se pueda subir tambien mi propio formato de hoja membretada para que todos los resultados puedan ponerse sobre mi formato. En la vista QR publica del paciente debe de verse tal como te lo compartí en el enlace, debe de poder tener acceso a sus resultados una vez que los publiquemos y que los pueda descargar.
+También, quiero que lleven firmas digitales los PDF y tambien que pueda anexar la firma de quien reporta en cada estudio de laboratorio, de tal forma que me permita subir una imagen con la firma a la configuración general. Permitiendo que en todos los resultados vaya la firma de quien valida o en su caso del responsable sanitario.
+Me gustaria lo siguiente, en cada reporte de estudio debe de aparcer el nombre de la persona que procesa y valida cada estudio, incluyendo la hora de validación, que esta opcion sea elegible por si se tiene un usuario abierto distinto al que valida. Y de manera global siempre debe de ir el nombre del responsable sanitario en la parte de abajo con su firma de manera digital, incluyendo nombre completo, el texto indicando Responsable Sanitario y su cedula profesional.  Quiero que los datos del Responsable sanitario se puedan configurar en un lugar elegido del reporte. Es posible esto sin generar tanto conflicto con el sistema?. La fecha/hora de validación use un formato específico (ej: 25-Jul-2024 14:30).
+Al momento de imprimir los resultados, quiero que me permita imprimir con hoja membretada o sin ella. ya que cuento con hojas membretadas a parte. Y por ende que me permita subir mi hoja membretada para el envio o visualización de los resultados con la hoja membretada. Por cierto, al compartir el archivo de los resultados, me gustaria que fuera a través de un link para whatsapp y por archivo completo por correo electronico. Me gustaria que junto al link de whatsapp vaya un mensaje precargado que pueda modificar, ya sea por paciente o por médico. Para whatsappa vamos a trabajar wa.me. Permiteme que pueda añadir emojis al mensaje de manera pre configurada para tener un diseño mas llamativo y que me permita hacer saltos de renglón para un ajuste visual más atractivo. Quiero que haya plantillas diferentes para pacientes y médicos.
+
+Continuando con el sistema. De las hojas de trabajo, en el listado de Hojas de Trabajo, te comparto los ejemplos de tipo de reporte:
+1.- Hoja de trabajo:
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/tablesort.js
+https://raw.githubusercontent.com/M4sterSn/css/refs/heads/main/printing_table.css
+https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/work_sheet_report.html
+
+2.- Resumen de Ordenes de Laboratorio:
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/tablesort.js
+https://raw.githubusercontent.com/M4sterSn/css/refs/heads/main/printing_table.css
+https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/work_sheet_report2.html
+
+3.- Reporte de Ordenes de Trabajo por Paciente, aquí me genera un archivo en PDF directamente que abre a otra ventana, te comparto lo que me muestra en sources:
+https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/work_sheet_index.html
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/browser_api.js
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/main.js
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/pdf_scripting_api.js
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/pdf_viewer_wrapper.js
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/shared.rollup.js
+https://raw.githubusercontent.com/M4sterSn/css/refs/heads/main/index.css
+
+4.-  Estudios Pendientes de Proceso:
+https://raw.githubusercontent.com/M4sterSn/js/refs/heads/main/tablesort.js
+https://raw.githubusercontent.com/M4sterSn/css/refs/heads/main/printing_table.css
+https://raw.githubusercontent.com/M4sterSn/html/refs/heads/main/work_sheet_report4.html
+
