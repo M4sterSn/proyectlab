@@ -1,7 +1,7 @@
 PASO 1
 Ayudame a recrear el sistema completo y funcional.
 Tengo únicamente el front-end, elije la mejor tecnología y mas fácil de usar para el back-end. Por ejemplo: PHP, Node.js, Python. Usa mi front-end tal cual, solo haz los ajustes mínimos para cambiar el nombre de la base de datos y el nombre del proyecto, al igual que cambiar el logo del laboratorio.
-2.- La Base de datos se llamará LCS y el Proyecto se llamará LabMind.
+2.- La Base de datos se llamará LCS y el Sistema se llamará LabMind.
 
 3.- Para la base de datos quiero usar el motor MySQL. Necesito que también me diseñes la base de datos con script listo.
 4.- Reutilizar los estilos CSS y scripts JS desde las rutas originales.
