@@ -3509,6 +3509,7 @@ Dentro de Conceptos se encuentran las opciones: Nuevo Concepto, Listado de Conce
 Dentro de Administración se encuentran las opciones: Usuarios
 Dentro de Reportes se encuentran las opciones: Reportes de Órdenes, Reportes de Conceptos, Pacientes por Empresa, Consumo de Insumos, Movimientos de Insumos, Pacientes por Doctor, Reportes de Ventas y Cierres, Reportes de Salidas de Caja, Reportes de Cotizaciones.
 
+PASO 5
 Te detallare cada uno de los títulos con todo el contenido de sources de cada uno de ellos:
 1.- Recepción
 La primera opción, Orden de Trabajo, ya te la detalle en el PASO 3; fue lo primero que mostró el sistema al iniciar sesión.
