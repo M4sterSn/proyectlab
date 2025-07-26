@@ -6,6 +6,51 @@ Ayudame a recrear el sistema completo y funcional en un archivo .zip. Tengo úni
 5.- Quiero que el sistema sea idéntico al que menciono.
 6.- Voy a trabajar con xampp y visual studio code en windows 11.
 
+Cambios generales solicitados:
+
+- Reemplazar todo lo que diga medicati por labmind
+- Reemplazar todo lo que diga mdti por mind
+- Reemplazar el logo en esta ruta: https://app24.medicati.com/mdti/lab/img/mt_icons/app/logo_mdti.png
+- Cambiar por logo temporal de LabMind (hasta que el cliente proporcione el definitivo)
+- Reemplazar esta imagen de letras: https://app24.medicati.com/mdti/lab/img/mt_icons/app/medicati.png
+- Indicar cómo cambiar el logo en el futuro
+- En Administración:
+ * Usuarios (control total para administradores)
+ * Configuración global del sistema (logo, hoja membretada, leyendas)
+
+Tecnología elegida para el backend:
+- PHP + MySQL (compatibilidad total con XAMPP y facilidad de despliegue)
+- Código estructurado por módulos.
+
+Envío por WhatsApp (activo)
+- Se activa desde el botón inferior derecho con ícono de WhatsApp
+- Implementado usando wa.me de WhatsApp
+- Implementar plantilla para pacientes y doctores por separado
+
+Impresión de etiquetas – Brother QL-800 (62mm)
+
+Contenido de la etiqueta:
+- Nombre del laboratorio
+- Fecha y hora
+- Nombre del paciente
+- Edad
+- Estudios
+- Tubo a utilizar (color mostrado como texto)
+- Código de barras
+- Cantidad de etiquetas configurable desde Grupo de Etiquetas por estudio
+- Impresión directa (sin generar PDF) como en el sistema original
+- Compatible con formato profesional y ordenado
+
+Folio de Orden de Trabajo (formato generado al guardar una orden):
+- Permite agregar nota o leyenda personal (editable desde configuración global)
+- Logo e información del laboratorio modificables desde panel de administración
+- Incluye código QR para visualización de resultados en línea (enlace generado dinámicamente)
+
+Resultados descargables (con hoja membretada personalizada):
+- Se podrá subir un archivo base tipo hoja membretada desde la configuración la cual se podrá elegir al momento de imprimir un resultado o si se desea imprimir sin hoja membretada digital para usar una hoja membretada fisica.
+- Los resultados descargados por pacientes se imprimirán sobre esa hoja.
+- Vista pública accesible vía QR tras publicar resultados.
+
 PASO 2
 te comparto el link para inciar sesion, en este caso el link aparece para el nombre del laboratorio en particular "san rafael". https://app24.medicati.com/mdti/lab/sanrafael/auth/login
 
