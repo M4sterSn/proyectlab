@@ -1,6 +1,10 @@
 PASO 1
-Tengo acceso a un sistema de reporte de laboratorio en línea, puedo acceder únicamente al fronted y te puedo pasar el código fuente de cada página que abre, incluyendo el apartado de reporte, plantillas, página principal, etcétera..
-
+Ayudame a recrear el sistema completo y funcional en un archivo .zip. Tengo únicamente el front-end, elije la mejor tecnología y mas fácil de usar para el back-end. Por ejemplo: PHP, Node.js, Python. Usa mi front-end tal cual, solo haz los ajustes mínimos para cambiar el nombre de la base de datos y el nombre del proyecto, al igual que cambiar el logo del laboratorio.
+2.- La Base de datos se llamará LCS y el Proyecto se llamará LabMind.
+3.- Para la base de datos quiero usar el motor MySQL. Necesito que también me diseñes la base de datos con script listo.
+4.- Reutilizar los estilos CSS y scripts JS desde las rutas originales.
+5.- Quiero que el sistema sea idéntico al que menciono.
+6.- Voy a trabajar con xampp y visual studio code en windows 11.
 
 PASO 2
 te comparto el link para inciar sesion, en este caso el link aparece para el nombre del laboratorio en particular "san rafael". https://app24.medicati.com/mdti/lab/sanrafael/auth/login
