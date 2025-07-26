@@ -1,5 +1,5 @@
 PASO 1
-Ayudame a recrear el sistema completo y funcional en un archivo .zip. Tengo únicamente el front-end, elije la mejor tecnología y mas fácil de usar para el back-end. Por ejemplo: PHP, Node.js, Python. Usa mi front-end tal cual, solo haz los ajustes mínimos para cambiar el nombre de la base de datos y el nombre del proyecto, al igual que cambiar el logo del laboratorio.
+Ayudame a recrear el sistema completo y funcional. Tengo únicamente el front-end. Usa mi front-end tal cual, solo haz los ajustes mínimos para cambiar el nombre de la base de datos y el nombre del proyecto, al igual que cambiar el logo del laboratorio.
 2.- La Base de datos se llamará LCS y el Proyecto se llamará LabMind.
 3.- Para la base de datos quiero usar el motor MySQL. Necesito que también me diseñes la base de datos con script listo.
 4.- Reutilizar los estilos CSS y scripts JS desde las rutas originales.
@@ -50,6 +50,11 @@ Resultados descargables (con hoja membretada personalizada):
 - Se podrá subir un archivo base tipo hoja membretada desde la configuración la cual se podrá elegir al momento de imprimir un resultado o si se desea imprimir sin hoja membretada digital para usar una hoja membretada fisica.
 - Los resultados descargados por pacientes se imprimirán sobre esa hoja.
 - Vista pública accesible vía QR tras publicar resultados.
+
+Vista visual completa y estructura del sistema:
+- Basado en archivos HTML, CSS y JS originales.
+- Todos los links de estilos y scripts permanecen apuntando a las rutas originales para reutilización:
+- https://raw.githubusercontent.com/M4sterSn/ (varias ramas y carpetas), pero tambien los puedo acceder de manera fisica a la carpeta que me indiques para su funcionalidad.
 
 PASO 2
 te comparto el link para inciar sesion, en este caso el link aparece para el nombre del laboratorio en particular "san rafael". https://app24.medicati.com/mdti/lab/sanrafael/auth/login
